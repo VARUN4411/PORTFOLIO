@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <title>Personle Portfolio</title>
+    <link rel="stylesheet" href="CSS.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!--     <link rel="stylesheet" href="mediaqueries.css" />
+ -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        Varun Mane
+        <!--         <img class="logo" src="er.png" alt="png" />
+ -->
+      </div>
+      <ul class="nav-links">
+        <li><a href="/HTML.html">HOME </a></li>
+        <li><a href="#about">ABOUT </a></li>
+        <li><a href="#exprerience">EXPERIENCE </a></li>
+        <li><a href="/HTML.html">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Varun Mane</div>
+      <div class="hamburger menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/HTML.html" onclick="togglemenu()">HOME</a></li>
+
+          <li><a href="/ABOUT.html" onclick="togglemenu()">ABOUT </a></li>
+          <li>
+            <a href="/PORTFOLIO.html" onclick="togglemenu()">EXPERIENCE </a>
+          </li>
+          <li><a href="/SERVICES.html" onclick="togglemenu()">PROJECTS</a></li>
+          <li><a href="/HIRE.html" onclick="togglemenu()">CONTACT</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <script src="script.js"></script>
+    <!--     section     -->
+    <section id="profile">
+      <div class="section_pic-container">
+        <img class="pic" src="v.jpg" alt="varun" />
+      </div>
+      <div class="section_text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Varun Mane</h1>
+        <p class="section__text__p2">Front end Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('Python-II.docx')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='EMPLOYEE.xlsx'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="sociais-container">
+          <a class="icon" href="mailto:varunmane9032@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>        </a>
+
+          <a class="icon" href=" https://wa.me/919021200359"target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        
+        </div>
+      </div>
+    
+    </section>
+    <section id="about">
+      <div class="about-section">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+    </div>
+    
+
+      <div class="section-container">
+        <div class="section-pict-container">
+          <img class="pict" src="varun.jpg" alt="varun" />
+      </div>
+      <div class="about-detail-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <i class="fa-solid fa-award"></i>
+            <h3> Eperience</h3>
+            <p>2+ years <br>Frontend Developer</p>
+          </div>
+          <div class="details-container">
+            <i class="fa-solid fa-user"></i>
+            <h3> Education</h3>
+            <p>BCA Bachloer Degree<br>MCA Master Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+             Eaque earum, quod hic reprehenderit accusamus tempore, 
+             tempora deleniti praesentium architecto amet voluptatum
+             culpa ea necessitatibus nostrum. Hic alias odio blanditiis 
+             tenetur?</p>
+        </div>
+      </div>
+      </div>
+<!--       <img src="down arrow.png" alt="arrow" class="icon-arrow"onclick="location.href='#exprerience'">
+ -->    </section>
+
+
+    <section id="exprerience">
+     <div class="exprerience-section">
+      <div class="ex">
+      <h1 class="graph">Experience Graph</h1>
+    </div>
+      <div class="myskill">
+        <p>HTML</p>
+        <div class="skill">
+          <div class="skills html">90%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="skill">
+          <div class="skills css">80%</div>
+        </div>
+        
+        <p>JavaScript</p>
+        <div class="skill">
+          <div class="skills js">65%</div>
+        </div>
+        
+        <p>PHP</p>
+        <div class="skill">
+          <div class="skills php">60%</div>
+        </div>
+     
+      </div>
+<!--       <img src="down arrow.png" alt="arrow" class="icon-arrow2"onclick="location.href='#contact'">
+ -->    </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+        <img src="icons8-email-48.png"
+        alt="email icon"
+        class="icon contact-icon "/>
+        <p><a href="mailto:varunmane9032@gmail.com">varunmane9032@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img src="icons8-whatsapp-48.png"
+          alt="email icon"
+          class="icon contact-icon whatsapp-icon"/>
+          <p><a href=" https://wa.me/919021200359"target="_blank">whatsapp</a></p>
+          </div>
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="/HTML.html">HOME </a></li>
+            <li><a href="#about">ABOUT </a></li>
+            <li><a href="/PORTFOLIO.html">EXPERIENCE </a></li>
+            <li><a href="/SERVICES.html">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>copyright &#169; 2023 Varun Mane. All Rights Reserved,</p>
+    </footer>
+  </body>
+</html>
